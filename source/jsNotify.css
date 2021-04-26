@@ -1,0 +1,64 @@
+/*
+ * jsNotify v1.1.0
+ * Default Theme
+ */
+
+.jsNotify-section {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+}
+.jsNotify {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	padding: 10px 30px 10px 12px;
+	float: right;
+	margin-bottom: 10px;
+	position: relative;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+	border-radius: 2px;
+	border: 1px solid black;
+}
+.jsNotify-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 18px;
+	height: 18px;
+	line-height: 15px;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+}
+.jsNotify-close:hover {
+	background-color: rgba(0,0,0,0.05);
+}
+.jsNotify-clear {
+	clear: both;
+}
+
+/* Types */
+.jsNotify.blue {
+	color: #004085;
+	background-color: #cce5ff;
+	border-color: #b8daff;
+}
+.jsNotify.green {
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+.jsNotify.yellow {
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+}
+.jsNotify.orange {
+	color: #854e04;
+	background-color: #ffe7cd;
+	border-color: #ffe4ba;
+}
+.jsNotify.red {
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}

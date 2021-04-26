@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jsNotify.js</title>
+	<meta name="description" content="jsNotify.js">
+	<meta name="author" content="GramThanos">
+
+	<!-- jsNotify Style -->
+	<link rel="stylesheet" href="../source/jsNotify.css">
+
+	<!-- Example Style -->
+	<style type="text/css">
+		body {
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+		}
+		.btn {
+			width: 120px;
+			padding: 8px 10px;
+		}
+
+	</style>
+
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container" style="text-align: center;padding: 25px 0px;">
+		<h1>jsNotify Default Example</h1>
+		<h3>Simple Javascript Notifications</h3>
+		<br>
+		Click any button to create a notification<br>
+		<br>
+		<button type="button" class="btn" id="blue-btn">Blue</button>
+		<button type="button" class="btn" id="green-btn">Green</button>
+		<button type="button" class="btn" id="yellow-btn">Yellow</button>
+		<button type="button" class="btn" id="orange-btn">Orange</button>
+		<button type="button" class="btn" id="red-btn">Red</button>
+	</div>
+
+	<!-- jsNotify Scripts -->
+	<script src="../source/sAnim.js"></script>
+	<script src="../source/jsNotify.js"></script>
+
+	<!-- jsNotify Example -->
+	<script type="text/javascript">
+		// Blue notification
+		document.getElementById('blue-btn').addEventListener('click', function() {
+			jsNotify('A simple <i>blue</i> notification.', 'blue', {time2live : 5*1000});
+		}, false);
+		
+		// Green notification
+		document.getElementById('green-btn').addEventListener('click', function() {
+			jsNotify('A simple <i>green</i> notification.', 'green', {time2live : 5*1000});
+		}, false);
+		
+		// Yellow notification
+		document.getElementById('yellow-btn').addEventListener('click', function() {
+			jsNotify('A simple <i>yellow</i> notification.', 'yellow', {time2live : 5*1000});
+		}, false);
+		
+		// Orange notification
+		document.getElementById('orange-btn').addEventListener('click', function() {
+			jsNotify('A simple <i>orange</i> notification.', 'orange', {time2live : 5*1000});
+		}, false);
+		
+		// Red notification
+		document.getElementById('red-btn').addEventListener('click', function() {
+			jsNotify('A simple <i>red</i> notification.', 'red', {time2live : 5*1000});
+		}, false);
+	</script>
+</body>
+</html>

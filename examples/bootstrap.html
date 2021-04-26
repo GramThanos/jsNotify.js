@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jsNotify.js</title>
+	<meta name="description" content="jsNotify.js">
+	<meta name="author" content="GramThanos">
+
+	<!-- Bootstrap Style -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	      crossorigin="anonymous">
+
+	<!-- jsNotify Bootstrap Theme -->
+	<link rel="stylesheet" href="../source/jsNotify.bootstrap.css">
+
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container" style="text-align: center;padding: 25px 0px;">
+		<h1>jsNotify Bootstrap Example</h1>
+		<h3>Notifications combined with bootstrap</h3>
+		<br>
+		Click any button to create a notification<br>
+		<br>
+		<button type="button" class="btn btn-primary" id="primary-btn">Primary</button>
+		<button type="button" class="btn btn-secondary" id="secondary-btn">Secondary</button>
+		<button type="button" class="btn btn-success" id="success-btn">Success</button>
+		<button type="button" class="btn btn-danger" id="danger-btn">Danger</button>
+		<button type="button" class="btn btn-warning" id="warning-btn">Warning</button>
+		<button type="button" class="btn btn-info" id="info-btn">Info</button>
+		<button type="button" class="btn btn-light" id="light-btn">Light</button>
+		<button type="button" class="btn btn-dark" id="dark-btn">Dark</button>
+	</div>
+
+	<!-- Bootstrap Scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	        crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+	        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+	        crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+	        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+	        crossorigin="anonymous"></script>
+
+	<!-- jsNotify Scripts -->
+	<script src="../source/sAnim.js"></script>
+	<script src="../source/jsNotify.js"></script>
+	<script src="../source/jsNotify.bootstrap.js"></script>
+
+	<!-- jsNotify Bootstrap Example -->
+	<script type="text/javascript">
+		// Primary notification
+		$('#primary-btn').click(function() {
+			jsNotify.primary('A simple <strong>primary</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Secondary notification
+		$('#secondary-btn').click(function() {
+			jsNotify.secondary('A simple <strong>secondary</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Success notification
+		$('#success-btn').click(function() {
+			jsNotify.success('A simple <strong>success</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Danger notification
+		$('#danger-btn').click(function() {
+			jsNotify.danger('A simple <strong>danger</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Warning notification
+		$('#warning-btn').click(function() {
+			jsNotify.warning('A simple <strong>warning</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Info notification
+		$('#info-btn').click(function() {
+			jsNotify.info('A simple <strong>info</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Light notification
+		$('#light-btn').click(function() {
+			jsNotify.light('A simple <strong>light</strong> notification.', {time2live : 5*1000});
+		});
+
+		// Dark notification
+		$('#dark-btn').click(function() {
+			jsNotify.dark('A simple <strong>dark</strong> notification.', {time2live : 5*1000});
+		});
+	</script>
+</body>
+</html>
