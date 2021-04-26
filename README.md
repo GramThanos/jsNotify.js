@@ -13,6 +13,7 @@ Add the sAnim and jsNotify code on `<head>`
 ```html
 <script type="text/javascript" src="sAnim.js"></script>
 <script type="text/javascript" src="jsNotify.js"></script>
+<link rel="stylesheet" href="jsNotify.css">
 ```
 
 You are now ready to fire your notifications!
