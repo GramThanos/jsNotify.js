@@ -1,46 +1,27 @@
-[![latest release](https://img.shields.io/badge/latest%20release-v1.0.0-green.svg?style=flat-square)](https://github.com/GramThanos/sAnim/releases/latest)
+![latest release](https://img.shields.io/badge/latest%20release-v1.1.0-green.svg?style=flat-square)
 
-# sAnim
-Simple javascript animations
-
- [aAnim.js v1.0.0 (~1kB gzipped)](https://raw.githubusercontent.com/GramThanos/sAnim/master/source/sAnim.js) - [sAnim.min.js v1.0.0 (~0.5kB gzipped)](https://raw.githubusercontent.com/GramThanos/sAnim/master/source/sAnim.min.js)
-
- • [Zip Download](https://github.com/GramThanos/sAnim/releases/latest) • [Website](https://gramthanos.github.io/sAnim/) • [Documentation](https://gramthanos.github.io/sAnim/docs.html) • 
-
+# jsNotify
+Simple javascript toast notifications
 
 ___
 
 
 ### Fast set up
 
-Add the sAnim code on `<head>`
+Add the sAnim and jsNotify code on `<head>`
 
 ```html
 <script type="text/javascript" src="sAnim.js"></script>
+<script type="text/javascript" src="jsNotify.js"></script>
 ```
 
-You are now ready to fire your animations!
+You are now ready to fire your notifications!
 
 ```html
 <script type="text/javascript">
-	new sAnim({from : 0, to : 100}, function(value) {
-		// Handle animation step
-		console.log(value);
-	}).start();
+	jsNotify('A simple <i>blue</i> notification.', 'blue', {time2live : 5*1000});
 </script>
 ```
-
-___
-
-
-### Contact me
-
-Contact me to leave me your feedback or to express your thoughts.
-
-[Open an issue](https://github.com/GramThanos/sAnim/issues)
-
-[Send me a mail](mailto:gramthanos@gmail.com)
-
 
 ___
 
